@@ -22,7 +22,7 @@ const init = async () => {
         }
     }
     if (link === "") {
-        alert("ask extension developer code@eliath.biz to fix this issue");
+        alert("ask extension developer slack-in-browser@eliath.biz to fix this issue");
     } else {
         window.location = link;
     }

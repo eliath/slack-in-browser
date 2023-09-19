@@ -14,3 +14,11 @@ Added a simple exponential backoff instead of constant 1sec wait time. Otherwise
 npm install --global web-ext
 web-ext build
 ```
+
+
+## Notes
+
+- Need to sign and distribute extension to enable permanent loading:
+  https://extensionworkshop.com/documentation/publish/signing-and-distribution-overview/
+- Consider adding automatic updates for v3 manifest
+- Improve the link finding logic, maybe
