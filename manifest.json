@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "slack-in-browser",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "description": "Skip the slack-link redirect page, always open the link the browser, and ignore the deep link to the desktop app.",
     "icons": {
         "48": "icons/eggplanthead-48.jpg",
@@ -10,18 +10,20 @@
     "content_scripts": [
         {
             "matches": [
-                "http://*.slack.com/archives/*",
-                "https://*.slack.com/archives/*"
+                "*://*.slack.com/archives/*"
             ],
             "js": [
                 "content.js"
             ]
         }
     ],
+    "host_permissions": [
+        "*://*.slack.com/archives/*"
+    ],
     "browser_specific_settings": {
         "gecko": {
             "id": "slack-in-browser@eliath.biz",
-            "strict_min_version": "52.0"
+            "strict_min_version": "109.0"
         }
     }
 }
