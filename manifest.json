@@ -18,7 +18,10 @@
             ]
         }
     ],
-    "gecko": {
-        "id": "slack-in-browser@eliath.biz"
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "slack-in-browser@eliath.biz",
+            "strict_min_version": "52.0"
+        }
     }
 }
